@@ -1,0 +1,12 @@
+{application,piqi,
+             [{description,"Piqi - Protocol Buffers, JSON and XML data serialization"},
+              {vsn,"v0.7.0-4-g0b01bd5"},
+              {modules,[piqi,piqi_app,piqi_piqi,piqi_rpc_piqi,piqi_sup,
+                        piqi_tools,piqi_tools_piqi,piqic,piqic_erlang,
+                        piqic_erlang_defaults,piqic_erlang_in,
+                        piqic_erlang_out,piqic_erlang_types,piqirun,
+                        piqirun_ext,piqirun_props,piqirun_tests]},
+              {registered,[piqi_tools,piqi_sup]},
+              {applications,[kernel,stdlib]},
+              {mod,{piqi_app,[]}},
+              {env,[{worker_pool_size,1}]}]}.
